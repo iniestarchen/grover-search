@@ -1,0 +1,32 @@
+{
+  "id": "grover-search",
+  "name": "Grover's Search Algorithm",
+  "category": "search",
+  "description": "Quadratic speedup for unstructured search: finds |11\u27e9 among 4 basis states with one Grover iteration.",
+  "long_description": "Grover's algorithm searches an unstructured database of N items in O(\u221aN) queries, compared to O(N) classically. The algorithm applies a phase oracle to mark the target state, followed by a diffusion operator that amplifies its amplitude. After O(\u221aN) iterations, the target is measured with high probability. This circuit searches a 2-qubit space (N=4) for |11\u27e9 using a phase kickback oracle.",
+  "difficulty": "intermediate",
+  "qubit_count": 3,
+  "clbit_count": 2,
+  "gate_count": 13,
+  "depth": 8,
+  "tags": [
+    "search",
+    "grover",
+    "amplitude-amplification",
+    "quadratic-speedup"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "~100% |11\u27e9 (c[0]=1, c[1]=1) after one Grover iteration",
+  "references": [
+    {
+      "title": "Grover, L.K. (1996). A Fast Quantum Mechanical Algorithm for Database Search. STOC '96",
+      "url": "https://doi.org/10.1145/237814.237866"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
